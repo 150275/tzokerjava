@@ -1,0 +1,21 @@
+td {
+    background-color:yellowgreen; border-style: none; border-radius: 18px;text-align: center;
+}
+.odd {
+    color: rgb(136, 83, 112);
+}
+.even{
+    color: darkgreen;
+}
+.wd{
+    color: coral;background-color: dimgrey;border-style:solid; border-color: red;border-width: 1px;
+}
+.wj{
+    color: lemonchiffon;background-color: gold; border-style:solid; border-color: red;border-width: 1px;
+}
+.wn{
+    color: white;background-color: blue; border-style:solid; border-color: white;border-width: 1px;
+}
+.empty{
+    color: white;background-color: blue; border-style:none; border-color: blue;
+}

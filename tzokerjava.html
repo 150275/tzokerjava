@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tzoker</title>
+    <link rel="stylesheet" href="css/tzokerstyle.css">
+    <script>
+        var rows = 9;//window.prompt("how many rows do you want")
+        var columns = 5;//window.prompt("how many columns do you want")
+        var number = 1;
+        document.write("<table border='1'>");
+
+        for (var i = 0; i < rows; i++) {
+            document.write("<tr>");
+            for (var z = 0; z < columns; z++) {
+                document.write("<td>" + number++ + "</td>");
+            }
+
+            document.write("</tr>");
+        }
+        document.write("</table>");
+
+        var tzokerRow = 5;
+        var tzokerCol = 4;
+        var tzokerNum = 1;
+        var lucky = window.prompt("tzoker?");
+        document.write("<table border='1'>");
+        for (var j = 0; j < tzokerRow; j++) {
+            document.write("<tr>");
+            for (var y = 0; y < tzokerCol; y++) {
+                if (tzokerNum == lucky) {
+                    document.write("<td>" + "*" + tzokerNum++ + "</td>");
+                }
+                    else {
+                        document.write("<td>" + tzokerNum++ + "</td>");
+                    }
+            }
+
+
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
