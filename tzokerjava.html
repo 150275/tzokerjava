@@ -21,24 +21,22 @@
             document.write("</tr>");
         }
         document.write("</table>");
-
-        var tzokerRow = 5;
-        var tzokerCol = 4;
+        var tzokerRows = 5;
+        var tzokerCols = 4;
         var tzokerNum = 1;
         var lucky = window.prompt("tzoker?");
         document.write("<table border='1'>");
-        for (var j = 0; j < tzokerRow; j++) {
+        for (var j = 0; j < tzokerRows; j++) {
             document.write("<tr>");
-            for (var y = 0; y < tzokerCol; y++) {
+            for (var y = 0; y < tzokerCols; y++) {
                 if (tzokerNum == lucky) {
-                    document.write("<td>" + "*" + "</td>");("<td>" + tzokerNum++ + "</td>");
+                    document.write("<td>" + "*" + "</td>");
+                    (tzokerNum++);
                 }
                 else {
                     document.write("<td>" + tzokerNum++ + "</td>");
                 }
             }
-
-
             document.write("</tr>");
         }
         document.write("</table>");
